@@ -1,0 +1,193 @@
+/* -----------------------------------*/
+/* ---------->>> FONTS <<<------------*/
+/* -----------------------------------*/
+@font-face {
+  font-family: 'source_sans_proregular';
+  src: url('/fonts/source-sans-pro/sourcesanspro-regular-webfont.eot');
+  src: url('/fonts/source-sans-pro/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/source-sans-pro/sourcesanspro-regular-webfont.woff2') format('woff2'),
+    url('/fonts/source-sans-pro/sourcesanspro-regular-webfont.woff') format('woff'),
+    url('/fonts/source-sans-pro/sourcesanspro-regular-webfont.ttf') format('truetype'),
+    url('/fonts/source-sans-pro/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'source_sans_probold';
+  src: url('/fonts/source-sans-pro/sourcesanspro-bold-webfont.eot');
+  src: url('/fonts/source-sans-pro/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/source-sans-pro/sourcesanspro-bold-webfont.woff2') format('woff2'),
+    url('/fonts/source-sans-pro/sourcesanspro-bold-webfont.woff') format('woff'),
+    url('/fonts/source-sans-pro/sourcesanspro-bold-webfont.ttf') format('truetype'),
+    url('/fonts/source-sans-pro/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'source_sans_proitalic';
+  src: url('/fonts/source-sans-pro/sourcesanspro-it-webfont.eot');
+  src: url('/fonts/source-sans-pro/sourcesanspro-it-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/source-sans-pro/sourcesanspro-it-webfont.woff2') format('woff2'),
+    url('/fonts/source-sans-pro/sourcesanspro-it-webfont.woff') format('woff'),
+    url('/fonts/source-sans-pro/sourcesanspro-it-webfont.ttf') format('truetype'),
+    url('/fonts/source-sans-pro/sourcesanspro-it-webfont.svg#source_sans_proitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 19px
+}
+
+header {
+  background: lightblue url("../img/bg.png") no-repeat center center;
+}
+
+/* ---------- BUTTONS ----------*/
+
+.btnSimple,
+button {
+  background: #4d5989;
+  border: 1px solid #4d5989;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  padding: 9px 15px;
+  display: inline-block;
+  opacity: 1;
+  transition: all 0.3s ease 0s;
+  margin-bottom: 15px
+}
+
+.btnSimple:hover,
+button:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.btnSimple--yellow {
+  background: yellow;
+}
+
+/* ---------- FORMS GENERIC----------*/
+label {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+input[type="email"],
+textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 0 10px;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+input[type="email"] {
+  height: 30px
+}
+
+/* 20px gutter */
+.gutter-20.row {
+  margin-right: -10px;
+  margin-left: -10px
+}
+
+.gutter-20>[class^="col-"],
+.gutter-20>[class^=" col-"] {
+  padding-right: 10px;
+  padding-left: 10px
+}
+
+/* ---------- SWIPER----------*/
+.swiper-container {
+  width: 100%;
+  height: 100%;
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  min-height: 300px;
+  background: #ccc
+}
+
+/* ---------- MEDIA QUERIES----------*/
+/*DEFAULT smaller than 576: mobile first*/
+
+
+@media (min-width: 576px) {}
+
+
+@media (min-width: 768px) {}
+
+
+@media (min-width: 992px) {}
+
+
+@media (min-width: 1200px) {}
+
+/* the other direction: classical*/
+.hamburger {
+  display: none
+}
+
+@media (max-width: 575.98px) {
+  .hamburger {
+    display: block
+  }
+
+  .hamburger~nav {
+    display: none;
+  }
+
+  .hamburger.is-active~nav {
+    display: block;
+  }
+
+}
+
+
+@media (max-width: 767.98px) {}
+
+
+@media (max-width: 991.98px) {}
+
+
+@media (max-width: 1199.98px) {}
